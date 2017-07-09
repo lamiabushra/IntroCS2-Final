@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+<meta name="color:background" content="#f6f6f6"/>
+<meta name="color:title" content="#eeeeee">
+<meta name="color:hover" content="#cccccc">
+
+<meta name="image:background" content=""/>
+<meta name="image:header" content=""/>
+
+<style type="text/css">
+#titlee{
+	width:1334px;
+	height:110px;
+	box-shadow:0px 2px 3px rgba(0,0,0,.15);
+	top:0px;
+	opacity:1;
+	position:absolute;
+	font-family: 'arial', sans-serif;
+	letter-spacing:3px;
+	font-style:none;
+	text-align:center;
+	font-weight:bold;
+	padding:13px;
+	color:#ffffff;
+	text-transform:uppercase;
+	line-height:45px;
+	font-size:16px;
+	margin-left:0px;
+	background:#000000;
+	z-index:9999;
+}
+#titlee:first-letter {
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	font-family: 'arial', sans-serif;
+	color:#ddd;
+	padding:0px;
+}
+#header{
+	position:absolute;
+	opacity:1;
+	width:1000px;
+	height:400px;
+	top:80px;
+	background:#EEEEEE;
+	margin-left:180px;
+	z-index:9999999;
+}
+#header img{
+	width:1000px;
+	height:400px;
+}
+#header {
+	position:fixed;
+	margin-top:190px;
+	padding:10px;
+	margin-left:180px;
+	background-color:transparent;
+	z-index:9999999999999999;
+}
+#headerimage {
+	z-index:-99999;
+}
+#headerimage img {
+	width:1000px;
+	height:400px;
+	left:180px;
+	top:80px;
+	position:absolute;
+	background:#EEEEEE;
+	z-index:99999;
+}
+ul {
+ 	list-style-type: none;	
+	margin: 0;
+ 	padding: 0;
+	position: relative;
+	top: 150px;
+	font-family: 'arial', sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+	width:200px;
+	text-transform: uppercase;
+	line-height:45px;
+	font-size:16px;
+	letter-spacing:3px;
+	font-style:none;
+	background-color:#00000;
+	font-color:#fffff;
+}
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.active {
+    background-color: #2b492c;
+    color: white;
+}
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+input.button {
+	background-color: black;
+	color:white;
+	padding: 10px 30px;
+	font-size: 15px;
+	text-transform:uppercase;
+	letter-spacing: 2px;
+	font-weight:bold;
+	cursor:pointer;
+}
+	
+input.button:hover {
+	background-color: #8d8d8d;
+}
+
+</style>
+
+<ul>
+  <li><a href="nature.html">Home</a></li>
+  <li><a href="about.html">About Us!</a></li>
+  <li><a class="active" href="quiz1.html">What Animal Are You?</a></li>
+  <li><a href="quiz2.html">What Pet Should You Own?</a></li>
+
+</ul> 
+
+<body>
+
+<div id="sidebar">
+<div id="titlee">What Animal Are You?</div>
+<div id="headerimage" ><img src="http://entertainmentvoice.com/wp-content/uploads/2017/04/BornInChina_Feature.jpg"></a>
+
+
+<form method="get" action="quiz1.py">
+
+<!-- SELF VS. PACT -->
+
+<div style="background-color:black;color:white;padding:20px;margin:auto;position:absolute;top:500px;left:180px;font-family: 'arial', sans-serif;">
+<p style="text-transform:uppercase;letter-spacing:2px;font-weight:bold">How do you handle group projects? </p>
+	<input type="radio" name="loyalty" value="Leopard" checked=""> Who needs group members. I can handle everything on my own.<br>
+ 	<input type="radio" name="loyalty" value="Wolf" checked=""> I take charge. I delegate work, do my fair share, and make sure that everyone contributes an equal amount. I don't care for slackers.<br>
+	<input type="radio" name="loyalty" value="Bottlenose Dolphin" checked=""> I do what I want, when I want. If I feel like doing my part, I will. If not, I won't. Unless the right person asks, I guess. <br>
+	<input type="radio" name="loyalty" value="Panda" checked=""> I don't.<br>
+</div>
+
+<!-- ENERGY LEVEL based on how happy you're song is LOL -->
+
+<div style="background-color:white;color:black;padding:20px;margin:auto;position:absolute;top:700px;left:180px;font-family: 'arial', sans-serif;">
+<p style="text-transform:uppercase;letter-spacing:2px;font-weight:bold">What would most likely be the first song you would play on a long road trip? (Listen <br>to the song by clicking on the title!)</p>
+	<input type="radio" name="energy" value="Leopard" checked=""> The opening song to <a href="https://www.youtube.com/watch?v=ScV5tNmHbgw"><i>Attack on Titan</i></a><br>
+	<input type="radio" name="energy" value="Bottlenose Dolphin" checked=""> <a href="https://www.youtube.com/watch?v=HoRkntoHkIE"><i>Home</i></a> by Phillip Phillips<br>
+	<input type="radio" name="energy" value="Panda" checked=""> <a href="https://www.youtube.com/watch?v=4wUPASp2hfY"><i>Speak Now</i></a> by Taylor Swift<br>
+	<input type="radio" name="energy" value="Wolf" checked=""> <a href="https://www.youtube.com/watch?v=Yh0voeHA3uc"><i>Backseat Serenade</i></a> by All Time Low<br>
+</div>
+
+<!-- LOYALTY AND CURIOSITY-->
+
+<div style="background-color:black;color:white;padding:20px;margin:auto;position:absolute;top:900px;left:180px;font-family: 'arial', sans-serif;">
+<p style="text-transform:uppercase;letter-spacing:2px;font-weight:bold"> Several locked boxes are placed in front of you. You are told specifically by someone <br> of authority never to touch the boxes. Which box would you open?</p>
+	<input type="radio" name="instinct" value="Panda" checked=""> You're honestly just too lazy to care about the boxes. You have better things to do. Like eat.<br>
+	<input type="radio" name="instinct" value="BottlenoseDolphin" checked=""> The box that seems to be made out of gold. Whatever is inside is glowing. The light seeps from outside of the box.<br>
+	<input type="radio" name="instinct" value="Leopard" checked=""> The shoebox that keeps moving on its own periodically.<br>
+	<input type="radio" name="instinct" value="Wolf" checked=""> None of them. You will follow orders until the end.<br>
+</div>
+
+<!-- FIGHT OR FLIGHT INSTINCT -->
+
+<div style="background-color:white;color:black;padding:20px;margin:auto;position:absolute;top:1100px;left:180px;font-family: 'arial', sans-serif;">
+<p style="text-transform:uppercase;letter-spacing:2px;font-weight:bold"> If you witness a fight happening in front of you, what do you do?</p>
+	<input type="radio" name="fight" value="Leopard" checked=""> Walk away. Not your problem, never will be. You don't know these people.<br>
+	<input type="radio" name="fight" value="Wolf" checked=""> Call a teacher. They're blocking the hall, after all.<br>
+	<input type="radio" name="fight" value="Panda" checked=""> Pull out your phone and start filming. It is the perfect thing to spice up your Snapchat story.<br>
+	<input type="radio" name="fight" value="BottlenoseDolphine" checked=""> Try and stop it. <i>Someone</i> has to be the good civilian, even if it means that you might get in trouble with school authorities.<br>
+</div>
+
+<!-- SOCIAL BEHAVIOR -->
+
+<div style="background-color:black;color:white;padding:20px;margin:auto;position:absolute;top:1300px;left:180px;font-family: 'arial', sans-serif;">
+<p style="text-transform:uppercase;letter-spacing:2px;font-weight:bold">Which party are you most likely to attend?</p>
+	<input type="radio" name="pact" value="BottlenoseDolphin" checked=""> The party jam packed with people, strobe lights and loud music everywhere <br>
+	<input type="radio" name="pact" value="Wolf" checked=""> A small get-together between close friends at their house <br>
+	<input type="radio" name="pact" value="Leopard"checked=""> A high school reunion party at a five star Italian restaurant <br>
+	<input type="radio" name="pact" value="Panda" checked=""> An after party for an art exhibition, with simple snack foods and lots of chit chat <br>
+</div>
+
+<!-- COMPETITIVENESS -->
+
+<div style="background-color:white;color:black;padding:20px;margin:auto;position:absolute;top:1500px;left:180px;font-family: 'arial', sans-serif;">
+<p style="text-transform:uppercase;letter-spacing:2px;font-weight:bold">What game would you be the most likely to play during family game night? </p>
+	<input type="radio" name="competition" value="Koala" checked=""> Game of Life <br>
+	<input type="radio" name="competition" value="BottlenoseDolphin" checked=""> Uno <br>
+	<input type="radio" name="competition" value="Wolf" checked=""> Charades <br>
+	<input type="radio" name="competition" value="Leopard" checked=""> Your gaming console. Who needs family game night anyways?<br>
+</div>
+
+<!-- NOCTURNAL OR NAH -->
+
+<div style="background-color:black;color:white;padding:20px;margin:auto;position:absolute;top:1700px;left:180px;font-family: 'arial', sans-serif;">
+<p style="text-transform:uppercase;letter-spacing:2px;font-weight:bold"> When are your working hours? (Or if you don't work, when are you the most lively?) </p>
+	<input type="radio" name="time" value="Koala" checked=""> 9am - 5pm <br>
+	<input type="radio" name="time" value="Leopard"checked=""> 10pm - 5am <br>
+	<input type="radio" name="time" value="Wolf" checked=""> 5am - 1pm <br>
+</div>
+
+<!-- ANIMAL SIMILARITIES -->
+
+<div style="background-color:white;color:black;padding:20px;margin:auto;position:absolute;top:1900px;left:180px;font-family: 'arial', sans-serif;">
+<p style="text-transform:uppercase;letter-spacing:2px;font-weight:bold"> Which iconic Disney animal do you like the most. (Click for the image if you're unfamiliar!) </p>
+	<input type="radio" name="disney" value="Leopard" checked=""> <a href=http://www.dvdizzy.com/images/a/aristocats-01.jpg> The kittens </a> from <i>The Aristocrats</i> <br>
+	<input type="radio" name="disney" value="BottlenoseDolphin" checked=""> <a href=http://orig03.deviantart.net/6af3/f/2015/159/9/0/tangled__maximus_by_frie_ice-d8wh136.jpg>Maximus</a> from <i>Tangled</i> <br>
+	<input type="radio" name="disney" value="Koala" checked=""> <a href=https://upload.wikimedia.org/wikipedia/en/8/8e/DisneyCheshireCat.jpg> Cheshire Cat </a> from <i>Alice in Wonderland</i> <br>
+	<input type="radio" name="disney" value="Wolf" checked=""> <a href=https://vignette4.wikia.nocookie.net/disney/images/2/2d/Shenzibanzaieddisney.jpeg/revision/latest?cb=20120725125315> Shenzi, Banzai, and Ed</a> from <i>The Lion King</i> <br>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div><input class="button" type="submit" value="Submit"></div>
+</form>
+
+
+
+
+
+
+</body>
+</html>
